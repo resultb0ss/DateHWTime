@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="День рождения"
+        app:titleTextColor="@color/white"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" >
+
+        <ImageButton
+            android:id="@+id/secondActivityExitButtonBTN"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_exit_24"
+            android:background="@null"
+            android:layout_marginEnd="8dp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/secondActivityImageViewIV"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/baseline_person_4_24" />
+
+    <android.widget.TextView
+        android:id="@+id/secondActivityDateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="До дня рождения 1 месяц и 10 дней"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#F60000"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="345dp" />
+
+    <TextView
+        android:id="@+id/secondActivityFirstNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Имя"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/secondActivityLastNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Фамилия"
+        android:layout_marginTop="16dp"
+        android:textSize="20dp"
+        android:layout_marginStart="16dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/secondActivityAgeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Возраст"
+        android:layout_marginTop="16dp"
+        android:textSize="20dp"
+        android:layout_marginStart="16dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/secondActivityPhoneTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Номер телефона"
+        android:layout_marginTop="16dp"
+        android:textSize="20dp"
+        android:layout_marginStart="16dp"
+        android:textStyle="bold"
+        />
+
+
+</LinearLayout>
